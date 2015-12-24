@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # TODO: discover latest available Tomcat version automatically
 TOMCAT="8.0.30"
