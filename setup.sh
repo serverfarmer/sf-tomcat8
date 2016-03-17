@@ -6,7 +6,7 @@ MIRROR="http://ftp.piotrkosoft.net/pub/mirrors/ftp.apache.org"
 TCDIR="apache-tomcat-$TOMCAT"
 
 
-bash /opt/farm/scripts/setup/role.sh sf-java8
+/opt/farm/scripts/setup/role.sh sf-java8
 
 mkdir -p /srv/sites
 DIR="`pwd`"
