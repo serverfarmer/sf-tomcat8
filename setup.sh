@@ -1,7 +1,6 @@
 #!/bin/sh
 
-# TODO: discover latest available Tomcat version automatically
-TOMCAT="8.0.30"
+TOMCAT="`curl -sS http://tomcat.apache.org/tomcat-8.0-doc/index.html |grep \"Apache Tomcat 8 (8.0...)\" |tr ' ' '\n' |grep \"(8.0\" |sed -e s/\(//g -e s/\)//g`"
 MIRROR="http://ftp.piotrkosoft.net/pub/mirrors/ftp.apache.org"
 TCDIR="apache-tomcat-$TOMCAT"
 
